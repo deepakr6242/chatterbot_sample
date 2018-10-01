@@ -44,7 +44,7 @@ def botView(request):
 	context_dict = {}
 	context = RequestContext(request)
 	
-	if request.method == 'POST':
+	if request.method == 'POST' and request.method ==ajax:
 		textbox = request.POST.get('textbox1',)
 		
 		while True:
